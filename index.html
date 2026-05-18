@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta name="description" content="Appify Solutions provides mobile application development services owned by Muhammad Abdullah. Flutter apps, Firebase backends, API integrations, and App Store or Play Store deployment.">
+
+    <title>Appify Solutions - Mobile Application Services</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Appify Solutions</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class='bx bx-code-alt'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-envelope'></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Owned by Muhammad Abdullah</span>
+                    <h1 class="home__name">Appify Solutions</h1>
+                    <h3 class="home__education">Flutter, Firebase, API integration, and store deployment for businesses that need reliable iOS and Android apps.</h3>
+
+                    <div class="home__button">
+                        <a href="mailto:abdullahqazi142@gmail.com" class="button">Email Appify Solutions</a>
+                        <a href="#work" class="button button--ghost">View App Work</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/success360.png" alt="Mobile app interface showcase" class="home__img">
+                </div>
+
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Business Owner</span>
+            <h2 class="section__title">About Appify Solutions</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/pure_audio.png" alt="Mobile app screens developed for clients" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-rocket about__icon'></i>
+                            <h3 class="about__title">Apps Shipped</h3>
+                            <span class="about__subtitle">20+ on Stores</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-star about__icon'></i>
+                            <h3 class="about__title">Clients</h3>
+                            <span class="about__subtitle">5-Star Rated</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-devices about__icon'></i>
+                            <h3 class="about__title">Platforms</h3>
+                            <span class="about__subtitle">iOS & Android</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Appify Solutions is owned and operated by Muhammad Abdullah, providing mobile application development
+                        services for clients who need clean, production-ready apps. The service covers app planning, Flutter
+                        development, Firebase and API integration, testing, and App Store or Play Store deployment.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Service Capabilities</span>
+            <h2 class="section__title">Mobile App Expertise</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Mobile Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Flutter</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Dart</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">State Management</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">REST APIs</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">UI/UX Design</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend & Tools</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">SQLite</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Cloud Functions</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Push Notifications</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">App Store Deploy</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Play Store Deploy</h3>
+                                    <span class="skills__level"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="services">
+            <span class="section__subtitle">App Services</span>
+            <h2 class="section__title">Services Offered</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Flutter App <br> Development</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Flutter App Development</h3>
+
+                            <p class="services__modal-description">
+                                Appify Solutions builds production Flutter apps end-to-end, including architecture,
+                                UI, API integration, testing, and store deployment.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Cross-platform iOS & Android from a single codebase.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Clean architecture with Provider, Bloc, or Riverpod.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Firebase, REST APIs, payments & push notifications.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        App Store & Play Store deployment and approval.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">AI & API <br> Integration</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">AI & API Integration</h3>
+
+                            <p class="services__modal-description">
+                                API, payment, AI, and automation integrations are added directly into Flutter apps
+                                so business ideas become working mobile features.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ChatGPT & AI-powered features.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Firebase, Firestore & real-time databases.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Payment gateways & Spotify API.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Push notifications & webhook automation.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== HOW I WORK ===============-->
+        <section class="process section">
+            <span class="section__subtitle">Delivery Process</span>
+            <h2 class="section__title">How Projects Run</h2>
+
+            <div class="process__container container grid">
+                <div class="process__card">
+                    <div class="process__number">01</div>
+                    <h3 class="process__title">Discovery</h3>
+                    <p class="process__description">Understand your requirements, review existing code if applicable, and define the scope.</p>
+                </div>
+
+                <div class="process__card">
+                    <div class="process__number">02</div>
+                    <h3 class="process__title">Build</h3>
+                    <p class="process__description">Develop with clean architecture, regular updates, and transparent communication throughout.</p>
+                </div>
+
+                <div class="process__card">
+                    <div class="process__number">03</div>
+                    <h3 class="process__title">Test</h3>
+                    <p class="process__description">Thorough testing on both iOS and Android. Fix issues before you ever see them.</p>
+                </div>
+
+                <div class="process__card">
+                    <div class="process__number">04</div>
+                    <h3 class="process__title">Deliver</h3>
+                    <p class="process__description">Deploy to App Store & Play Store. Full handoff with documentation and ongoing support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">App Portfolio</span>
+            <h2 class="section__title">Recent Mobile Projects</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.ios'>iOS</span>
+                <span class=" work__item" data-filter='.android'>Android</span>
+            </div>
+
+            <div class="work__container container grid">
+
+                <!--===== Success360 (Live - App Store) =====-->
+                <div class="work__card mix ios android">
+                    <img src="assets/img/success360.png" alt="Success360 App" class="work__img">
+                    <h3 class="work__title">Success360</h3>
+                    <div class="work__details">
+                        <p class="work__detail-item"><strong>Problem:</strong> The client had a vision for an all-in-one personal development app but no existing solution combined fitness, wellness, business tools, and finance tracking in a single mobile experience.</p>
+                        <p class="work__detail-item"><strong>Solution:</strong> Built the entire app from scratch — AI-powered fitness coaching with diet plans, wellness journals with affirmations, a business accelerator with AI coaching and funding tools, paper trading with real-time stock prices, global news feed, and community networking with mentors.</p>
+                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, REST APIs, AI integrations</p>
+                        <p class="work__detail-item"><strong>Result:</strong> Live on App Store — 500+ users. 6 major feature modules shipped in a single stable release.</p>
+                        <p class="work__detail-item"><strong>Role:</strong> Solo developer — built the full app end-to-end including architecture, UI, API integrations, and store deployment.</p>
+                    </div>
+                    <a href="https://apps.apple.com/pk/app/success360/id6754213328" target="_blank" class="work__button">
+                        App Store <i class='bx bxl-apple work__icon'></i>
+                    </a>
+                </div>
+
+                <!--===== Our Time Together (Live - App Store + Play Store) =====-->
+                <div class="work__card mix ios android">
+                    <img src="assets/img/ott.png" alt="Our Time Together App" class="work__img">
+                    <h3 class="work__title">Our Time Together</h3>
+                    <div class="work__details">
+                        <p class="work__detail-item"><strong>Problem:</strong> The client wanted a couples app that went beyond basic countdown timers — something emotionally engaging with themed experiences that couples would actually keep using.</p>
+                        <p class="work__detail-item"><strong>Solution:</strong> Built a relationship tracker with real-time counters (seconds to years), milestone badges (1 day, 100 days, anniversaries), 3 dynamic themes (Christmas, Halloween, Love) each with unique UI, animations, and sounds, shared photo timelines, and customizable widgets.</p>
+                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, Custom Animations, Mobile UI</p>
+                        <p class="work__detail-item"><strong>Result:</strong> Live on both App Store and Play Store — 50+ paid downloads (premium app, not free). Positive user feedback on the themed experiences.</p>
+                        <p class="work__detail-item"><strong>Role:</strong> Solo developer — handled everything from concept implementation to dual-platform store deployment.</p>
+                    </div>
+                    <div class="work__links">
+                        <a href="https://apps.apple.com/us/app/our-time-together/id1633279048" target="_blank" class="work__button">
+                            App Store <i class='bx bxl-apple work__icon'></i>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.MJA.ott" target="_blank" class="work__button">
+                            Play Store <i class='bx bxl-play-store work__icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--===== Pure HD Audio (Live - Play Store) =====-->
+                <div class="work__card mix android">
+                    <img src="assets/img/pure_audio.png" alt="Pure HD Audio App" class="work__img">
+                    <h3 class="work__title">Pure HD Audio</h3>
+                    <div class="work__details">
+                        <p class="work__detail-item"><strong>Problem:</strong> The client wanted a premium equalizer app for audiophiles — existing options on the Play Store were either cluttered with ads or lacked real audio control.</p>
+                        <p class="work__detail-item"><strong>Solution:</strong> Built a professional 8-band equalizer (60Hz–12kHz) with +/-12dB real-time control, curated presets (Bass Up, Hi-Fi, Deep EQ, Vibe+, Stage), Spotify playlist integration for HD streaming, and wireless headphone optimization.</p>
+                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Android, Spotify API, Audio Processing, REST APIs</p>
+                        <p class="work__detail-item"><strong>Result:</strong> Live on Play Store — 1,000+ downloads. Professional-grade audio control in a clean, ad-free interface.</p>
+                        <p class="work__detail-item"><strong>Role:</strong> Solo developer — built the full audio processing pipeline and UI from scratch.</p>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.silentsystem.pureaudiohd" target="_blank" class="work__button">
+                        Play Store <i class='bx bxl-play-store work__icon'></i>
+                    </a>
+                </div>
+
+                <!--===== Bhook Food Delivery (Team Project) =====-->
+                <div class="work__card mix ios android">
+                    <img src="assets/img/bhook.png" alt="Bhook Food Delivery App" class="work__img">
+                    <h3 class="work__title">Bhook</h3>
+                    <div class="work__details">
+                        <p class="work__detail-item"><strong>Problem:</strong> University software engineering project — build a production-quality food delivery app with real payment processing and live order tracking.</p>
+                        <p class="work__detail-item"><strong>Solution:</strong> Built the Flutter frontend and integrated the full ordering flow — restaurant browsing, cart management, card payment gateway, real-time delivery tracking, and a UI designed for speed and ease of use.</p>
+                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, Payment Gateway, REST APIs, Mobile UI</p>
+                        <p class="work__detail-item"><strong>Result:</strong> Fully functional end-to-end ordering flow with real payment processing on both platforms.</p>
+                        <p class="work__detail-item"><strong>Role:</strong> Flutter developer in a software engineering team — responsible for the mobile frontend and API integration.</p>
+                    </div>
+                </div>
+
+                <!--===== Matchmaking Events (Team Project) =====-->
+                <div class="work__card mix ios android">
+                    <img src="assets/img/matchmaking.png" alt="Matchmaking Events App" class="work__img">
+                    <h3 class="work__title">Matchmaking Events</h3>
+                    <div class="work__details">
+                        <p class="work__detail-item"><strong>Problem:</strong> University FYP — design and build a platform that facilitates real-world connections through curated in-person events instead of swipe-based dating.</p>
+                        <p class="work__detail-item"><strong>Solution:</strong> Built the mobile app with event registration, interest-based user matching, post-event engagement features, and a focus on safe, curated gatherings.</p>
+                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, REST APIs, Real-time Database, Mobile UI</p>
+                        <p class="work__detail-item"><strong>Result:</strong> Completed as final year project. Cross-platform app connecting users through real events.</p>
+                        <p class="work__detail-item"><strong>Role:</strong> Flutter developer in a software engineering team — responsible for the mobile app and real-time features.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">Client Feedback</span>
+            <h2 class="section__title">Testimonials</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/clients_pic/Mark.jpg" alt="Mark" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Mark</h3>
+                        <span class="testimonial__source">Founder, HiFun — United States | Upwork</span>
+                        <p class="testimonial__description">
+                            Appify Solutions consistently delivers excellent mobile app work. I highly recommend the team to anyone looking to bring their app ideas to life. We are very satisfied with the results and look forward to continuing our collaboration.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/avatar.svg" alt="Georgi" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Georgi</h3>
+                        <span class="testimonial__source">Entrepreneur — Bulgaria | Upwork</span>
+                        <p class="testimonial__description">
+                            Appify Solutions did a great job with my project and adapted very well to new features and changing requirements. Looking forward to working together again in the near future!
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/clients_pic/Alecia Lucas.jpg" alt="Alecia Lucas" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Alecia Lucas</h3>
+                        <span class="testimonial__source">Health Consultant — United States | Fiverr</span>
+                        <p class="testimonial__description">
+                            Very Professional & Responsive. Great at what he does and understanding idea concepts.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/avatar.svg" alt="Maheka Ruhitokui" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Maheka R.</h3>
+                        <span class="testimonial__source">Upwork</span>
+                        <p class="testimonial__description">
+                            They took my vision and made it even better. Their deep understanding of Flutter made the process smooth and easy. Look forward to working with them again for sure.
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/clients_pic/hima.jpg" alt="Hima" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Hima</h3>
+                        <span class="testimonial__source">Project Manager — Egypt | Fiverr</span>
+                        <p class="testimonial__description">
+                            Professional at work. He can easily implement ideas. He completes the project on time and does not delay. He always asks if you want to make any changes with an open heart. Excellent work spirit.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get In Touch</span>
+            <h2 class="section__title">Contact Appify Solutions</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Business Contact</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">abdullahqazi142@gmail.com</span>
+                            <a href="mailto:abdullahqazi142@gmail.com" class="contact__button">
+                                Send Email <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">Business Profile</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-buildings contact__card-icon'></i>
+                            <h3 class="contact__card-title">Business Name</h3>
+                            <span class="contact__card-data">Appify Solutions</span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bx-mobile-alt contact__card-icon'></i>
+                            <h3 class="contact__card-title">Category</h3>
+                            <span class="contact__card-data">Mobile Application Development Services</span>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bx-user-check contact__card-icon'></i>
+                            <h3 class="contact__card-title">Owner</h3>
+                            <span class="contact__card-data">Muhammad Abdullah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Appify Solutions</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <a href="mailto:abdullahqazi142@gmail.com" class="footer__email">abdullahqazi142@gmail.com</a>
+
+
+            <span class="footer__copy">
+                &#169; 2026 Appify Solutions. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
