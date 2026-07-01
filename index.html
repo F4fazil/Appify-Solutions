@@ -9,277 +9,197 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#a789d4">
+    <meta name="theme-color" content="#0f1b2d">
+
+    <!--=============== OG META ===============-->
+    <meta property="og:title" content="Craftlytics — Innovation, Crafted.">
+    <meta property="og:description" content="Craftlytics builds mobile apps, websites, and AI agents that help startups move faster and smarter.">
+    <meta property="og:image" content="assets/img/craftlytics-logo.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--=============== GOOGLE FONTS ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/craftlytics.css">
 
-    <meta name="description" content="Appify Solutions provides mobile application development services owned by Muhammad Abdullah. Flutter apps, Firebase backends, API integrations, and App Store or Play Store deployment.">
+    <meta name="description" content="Craftlytics builds mobile apps, websites, and AI agents that help startups move faster and smarter.">
+    <meta name="keywords" content="Mobile App Development, Web Development, AI Agents, AI Calling Agents, MVP Development, Startup Technology Partner, Custom Software Development">
 
-    <title>Appify Solutions - Mobile Application Services</title>
+    <title>Craftlytics — Innovation, Crafted.</title>
 </head>
 
 <body>
+    <!--=============== LOADER ===============-->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <img src="assets/img/craftlytics-logo.png" alt="Craftlytics" class="loader__logo">
+            <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+        </div>
+    </div>
+
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Appify Solutions</a>
+        <div class="header__accent-bar"></div>
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/craftlytics-logo.png" alt="Craftlytics" class="nav__logo-img">
+            </a>
 
-            <div class="nav__menu">
+            <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item ">
-                        <a href="#home" class="nav__link">
-                            <i class='bx bx-home'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a href="#about" class="nav__link">
-                            <i class='bx bx-user'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bx-book'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class='bx bx-code-alt'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link">
-                            <i class='bx bx-briefcase-alt-2'></i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bx-envelope'></i>
-                        </a>
-                    </li>
-
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#portfolio" class="nav__link">Work</a></li>
+                    <li><a href="#impact" class="nav__link">Impact</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta">Let's Talk</a></li>
                 </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
             </div>
 
-            <!--=============== theme change button ===============-->
-            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+            <div class="nav__socials">
+                <a href="https://www.linkedin.com/company/craftlytics/" target="_blank" class="nav__social-link" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            </div>
 
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
         </nav>
     </header>
 
+    <!-- Mobile menu backdrop -->
+    <div class="nav__backdrop" id="nav-backdrop"></div>
+
     <!--=============== MAIN ===============-->
     <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__greeting">Owned by Muhammad Abdullah</span>
-                    <h1 class="home__name">Appify Solutions</h1>
-                    <h3 class="home__education">Flutter, Firebase, API integration, and store deployment for businesses that need reliable iOS and Android apps.</h3>
-
-                    <div class="home__button">
-                        <a href="mailto:abdullahqazi142@gmail.com" class="button">Email Appify Solutions</a>
-                        <a href="#work" class="button button--ghost">View App Work</a>
+        <!--=============== HERO ===============-->
+        <section class="hero section" id="home">
+            <div class="hero__bg">
+                <canvas id="hero-canvas"></canvas>
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        INNOVATE<br>
+                        ACCELERATE<br>
+                        AND DOMINATE
+                    </h1>
+                    <p class="hero__description">
+                        Crafting apps, websites & AI agents for startups that move fast.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contact" class="btn btn--primary">Get Started</a>
+                        <a href="#services" class="btn btn--outline">Our Services</a>
                     </div>
                 </div>
-
-                <div class="home__handle">
-                    <img src="assets/img/success360.png" alt="Mobile app interface showcase" class="home__img">
+                <div class="hero__cards">
+                    <div class="hero__card hero__card--1">
+                        <span class="hero__card-label">HOW WE THINK</span>
+                        <h3 class="hero__card-title">Understanding the Importance</h3>
+                        <p class="hero__card-text">How do you create compelling products that wow your users?...</p>
+                    </div>
+                    <div class="hero__card hero__card--2">
+                        <span class="hero__card-label">WHAT WE DO</span>
+                        <h3 class="hero__card-title">Driving Digital Growth</h3>
+                        <p class="hero__card-text">We build scalable solutions that transform businesses</p>
+                    </div>
                 </div>
+            </div>
+        </section>
 
-
-                <a href="#about" class="home__scroll">
-                    <i class='bx bx-mouse home__scroll-icon'></i>
-                    <span class="home__scroll-name">Scroll Down</span>
-                </a>
+        <!--=============== TRUSTED BY ===============-->
+        <section class="clients">
+            <div class="clients__container container">
+                <span class="clients__label">Trusted by founders on</span>
+                <div class="clients__logos">
+                    <div class="clients__logo-item">
+                        <i class='bx bxl-apple' style="font-size:1.6rem"></i>
+                        <span>App Store</span>
+                    </div>
+                    <div class="clients__logo-item">
+                        <i class='bx bxl-play-store' style="font-size:1.6rem"></i>
+                        <span>Google Play</span>
+                    </div>
+                    <div class="clients__logo-item">
+                        <i class='bx bx-up-arrow-circle' style="font-size:1.6rem"></i>
+                        <span>Upwork</span>
+                    </div>
+                    <div class="clients__logo-item">
+                        <i class='bx bx-star' style="font-size:1.6rem"></i>
+                        <span>Fiverr</span>
+                    </div>
+                    <div class="clients__logo-item">
+                        <i class='bx bxl-linkedin' style="font-size:1.6rem"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--=============== ABOUT ===============-->
         <section class="about section" id="about">
-            <span class="section__subtitle">Business Owner</span>
-            <h2 class="section__title">About Appify Solutions</h2>
-
-            <div class="about__container container grid">
-                <img src="assets/img/pure_audio.png" alt="Mobile app screens developed for clients" class="about__img">
-
-                <div class="about__data">
-                    <div class="about__info">
-                        <div class="about__box">
-                            <i class='bx bx-rocket about__icon'></i>
-                            <h3 class="about__title">Apps Shipped</h3>
-                            <span class="about__subtitle">20+ on Stores</span>
-                        </div>
-                        <div class="about__box">
-                            <i class='bx bx-star about__icon'></i>
-                            <h3 class="about__title">Clients</h3>
-                            <span class="about__subtitle">5-Star Rated</span>
-                        </div>
-                        <div class="about__box">
-                            <i class='bx bx-devices about__icon'></i>
-                            <h3 class="about__title">Platforms</h3>
-                            <span class="about__subtitle">iOS & Android</span>
-                        </div>
-                    </div>
-
-                    <p class="about__description">
-                        Appify Solutions is owned and operated by Muhammad Abdullah, providing mobile application development
-                        services for clients who need clean, production-ready apps. The service covers app planning, Flutter
-                        development, Firebase and API integration, testing, and App Store or Play Store deployment.
-                    </p>
-
+            <div class="about__container container">
+                <div class="about__header">
+                    <span class="section__label">WHO WE ARE</span>
+                    <h2 class="section__title">About Craftlytics</h2>
                 </div>
-            </div>
-        </section>
-
-        <!--=============== SKILLS ===============-->
-        <section class="skills section" id="skills">
-            <span class="section__subtitle">Service Capabilities</span>
-            <h2 class="section__title">Mobile App Expertise</h2>
-
-            <div class="skills__container container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title">Mobile Development</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Flutter</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Dart</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">State Management</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">REST APIs</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Git</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">UI/UX Design</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p class="about__lead">
+                            Craftlytics is a technology studio committed to helping startups turn ideas into powerful, scalable digital products.
+                        </p>
+                        <p>
+                            We specialize in building custom mobile apps, websites, and AI-driven solutions that help businesses move faster and operate smarter.
+                        </p>
+                        <p>
+                            As a lean, senior-led team, we work directly with founders — no layers of account managers, no bloated timelines. Every project is handled by developers who care about the outcome, not just the deliverable.
+                        </p>
+                        <p>
+                            At Craftlytics, we don't just write code — we build products that move your business forward.
+                        </p>
                     </div>
-                </div>
-
-                <div class="skills__content">
-                    <h3 class="skills__title">Backend & Tools</h3>
-
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
+                    <div class="about__why">
+                        <h3 class="about__why-title">Why Choose Craftlytics</h3>
+                        <div class="about__why-grid">
+                            <div class="about__why-item">
+                                <i class='bx bx-bolt-circle'></i>
                                 <div>
-                                    <h3 class="skills__name">Firebase</h3>
-                                    <span class="skills__level"></span>
+                                    <h4>Fast Delivery</h4>
+                                    <p>No long waits, no red tape</p>
                                 </div>
                             </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
+                            <div class="about__why-item">
+                                <i class='bx bx-target-lock'></i>
                                 <div>
-                                    <h3 class="skills__name">SQLite</h3>
-                                    <span class="skills__level"></span>
+                                    <h4>Direct Access</h4>
+                                    <p>You talk to the builders, not middlemen</p>
                                 </div>
                             </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
+                            <div class="about__why-item">
+                                <i class='bx bx-bulb'></i>
                                 <div>
-                                    <h3 class="skills__name">Cloud Functions</h3>
-                                    <span class="skills__level"></span>
+                                    <h4>Smart Solutions</h4>
+                                    <p>We don't just code, we solve problems</p>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
+                            <div class="about__why-item">
+                                <i class='bx bx-rocket'></i>
                                 <div>
-                                    <h3 class="skills__name">Push Notifications</h3>
-                                    <span class="skills__level"></span>
+                                    <h4>Startup-Friendly</h4>
+                                    <p>We get how you move, and we move with you</p>
                                 </div>
                             </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">App Store Deploy</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class='bx bxs-badge-check'></i>
-
-                                <div>
-                                    <h3 class="skills__name">Play Store Deploy</h3>
-                                    <span class="skills__level"></span>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -288,401 +208,933 @@
 
         <!--=============== SERVICES ===============-->
         <section class="services section" id="services">
-            <span class="section__subtitle">App Services</span>
-            <h2 class="section__title">Services Offered</h2>
-
-            <div class="services__container container grid">
-                <div class="services__card">
-                    <h3 class="services__title">Flutter App <br> Development</h3>
-
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-
-                            <h3 class="services__modal-title">Flutter App Development</h3>
-
-                            <p class="services__modal-description">
-                                Appify Solutions builds production Flutter apps end-to-end, including architecture,
-                                UI, API integration, testing, and store deployment.
-                            </p>
-
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Cross-platform iOS & Android from a single codebase.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Clean architecture with Provider, Bloc, or Riverpod.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Firebase, REST APIs, payments & push notifications.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        App Store & Play Store deployment and approval.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="services__container container">
+                <div class="services__header">
+                    <span class="section__label section__label--light">WHAT WE DO</span>
+                    <h2 class="section__title section__title--light">Our Services</h2>
+                    <p class="services__subtitle">Our approach allows us to deliver exceptional experiences that drive growth and success.</p>
                 </div>
 
-                <div class="services__card">
-                    <h3 class="services__title">AI & API <br> Integration</h3>
+                <div class="services__grid">
+                    <div class="services__card">
+                        <div class="services__card-icon">
+                            <i class='bx bx-mobile-alt'></i>
+                        </div>
+                        <h3 class="services__card-title">Mobile App Development</h3>
+                        <p class="services__card-text">iOS & Android apps built to scale — from MVP to full product.</p>
+                    </div>
 
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
+                    <div class="services__card">
+                        <div class="services__card-icon">
+                            <i class='bx bx-globe'></i>
+                        </div>
+                        <h3 class="services__card-title">Website & Web App Development</h3>
+                        <p class="services__card-text">Fast, modern websites and web apps designed to convert visitors into customers.</p>
+                    </div>
 
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
+                    <div class="services__card">
+                        <div class="services__card-icon">
+                            <i class='bx bx-bot'></i>
+                        </div>
+                        <h3 class="services__card-title">AI Agents</h3>
+                        <p class="services__card-text">Custom-built AI agents that automate your internal workflows and daily tasks.</p>
+                    </div>
 
-                            <h3 class="services__modal-title">AI & API Integration</h3>
+                    <div class="services__card">
+                        <div class="services__card-icon">
+                            <i class='bx bx-phone-call'></i>
+                        </div>
+                        <h3 class="services__card-title">AI Calling Agents</h3>
+                        <p class="services__card-text">Voice AI that handles inbound/outbound calls, lead qualification, and customer support — 24/7.</p>
+                    </div>
 
-                            <p class="services__modal-description">
-                                API, payment, AI, and automation integrations are added directly into Flutter apps
-                                so business ideas become working mobile features.
-                            </p>
+                    <div class="services__card">
+                        <div class="services__card-icon">
+                            <i class='bx bx-rocket'></i>
+                        </div>
+                        <h3 class="services__card-title">MVP Development</h3>
+                        <p class="services__card-text">Get a working product in front of users fast, without cutting corners.</p>
+                    </div>
 
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        ChatGPT & AI-powered features.
-                                    </p>
-                                </li>
+                    <div class="services__card">
+                        <div class="services__card-icon">
+                            <i class='bx bx-bulb'></i>
+                        </div>
+                        <h3 class="services__card-title">Digital Product Strategy</h3>
+                        <p class="services__card-text">Guidance on turning your idea into a scalable, well-architected product.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Firebase, Firestore & real-time databases.
-                                    </p>
-                                </li>
+        <!--=============== TECH STACK ===============-->
+        <section class="techstack section">
+            <div class="techstack__container container">
+                <div class="techstack__header">
+                    <span class="section__label">OUR TOOLS</span>
+                    <h2 class="section__title">Tech Stack</h2>
+                    <p class="techstack__subtitle">The technologies we use to bring your ideas to life.</p>
+                </div>
+                <div class="techstack__grid">
+                    <div class="techstack__item">
+                        <i class='bx bxl-flutter'></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-react'></i>
+                        <span>React</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-nodejs'></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-python'></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-firebase'></i>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-aws'></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-figma'></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-javascript'></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-typescript'></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-postgresql'></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-docker'></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="techstack__item">
+                        <i class='bx bxl-git'></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Payment gateways & Spotify API.
-                                    </p>
-                                </li>
+        <!--=============== PORTFOLIO ===============-->
+        <section class="portfolio section" id="portfolio">
+            <div class="portfolio__container container">
+                <div class="portfolio__header">
+                    <span class="section__label section__label--light">OUR WORK</span>
+                    <h2 class="section__title section__title--light">Recent Projects</h2>
+                    <p class="portfolio__subtitle">Real products we've built for real clients.</p>
+                </div>
 
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Push notifications & webhook automation.
-                                    </p>
-                                </li>
-                            </ul>
+                <div class="portfolio__grid">
+                    <!-- Success360 -->
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img">
+                            <img src="assets/img/success360.png" alt="Success360 App">
+                            <div class="portfolio__card-overlay">
+                                <a href="https://apps.apple.com/pk/app/success360/id6754213328" target="_blank" class="btn btn--primary btn--sm">View on App Store</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-body">
+                            <div class="portfolio__card-tags">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>AI</span>
+                                <span>iOS</span>
+                            </div>
+                            <h3 class="portfolio__card-title">Success360</h3>
+                            <p class="portfolio__card-text">All-in-one personal development app — AI fitness coaching, wellness journals, business accelerator, paper trading, and community networking.</p>
+                            <div class="portfolio__card-result">
+                                <i class='bx bx-trending-up'></i>
+                                <span>500+ users on App Store</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Time Together -->
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img">
+                            <img src="assets/img/ott.png" alt="Our Time Together App">
+                            <div class="portfolio__card-overlay">
+                                <a href="https://apps.apple.com/us/app/our-time-together/id1633279048" target="_blank" class="btn btn--primary btn--sm">View on App Store</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-body">
+                            <div class="portfolio__card-tags">
+                                <span>Flutter</span>
+                                <span>Animations</span>
+                                <span>iOS</span>
+                                <span>Android</span>
+                            </div>
+                            <h3 class="portfolio__card-title">Our Time Together</h3>
+                            <p class="portfolio__card-text">Couples relationship app with real-time counters, milestone badges, 3 dynamic themes with unique animations, photo timelines, and widgets.</p>
+                            <div class="portfolio__card-result">
+                                <i class='bx bx-trending-up'></i>
+                                <span>50+ paid downloads — both stores</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pure HD Audio -->
+                    <div class="portfolio__card">
+                        <div class="portfolio__card-img">
+                            <img src="assets/img/pure_audio.png" alt="Pure HD Audio App">
+                            <div class="portfolio__card-overlay">
+                                <a href="https://play.google.com/store/apps/details?id=com.silentsystem.pureaudiohd" target="_blank" class="btn btn--primary btn--sm">View on Play Store</a>
+                            </div>
+                        </div>
+                        <div class="portfolio__card-body">
+                            <div class="portfolio__card-tags">
+                                <span>Flutter</span>
+                                <span>Spotify API</span>
+                                <span>Audio</span>
+                                <span>Android</span>
+                            </div>
+                            <h3 class="portfolio__card-title">Pure HD Audio</h3>
+                            <p class="portfolio__card-text">Professional 8-band equalizer with curated presets, Spotify integration, wireless headphone optimization — clean, ad-free interface.</p>
+                            <div class="portfolio__card-result">
+                                <i class='bx bx-trending-up'></i>
+                                <span>1,000+ downloads on Play Store</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--=============== HOW I WORK ===============-->
-        <section class="process section">
-            <span class="section__subtitle">Delivery Process</span>
-            <h2 class="section__title">How Projects Run</h2>
-
-            <div class="process__container container grid">
-                <div class="process__card">
-                    <div class="process__number">01</div>
-                    <h3 class="process__title">Discovery</h3>
-                    <p class="process__description">Understand your requirements, review existing code if applicable, and define the scope.</p>
+        <!--=============== FOCUS ===============-->
+        <section class="focus section" id="focus">
+            <div class="focus__container container">
+                <div class="focus__left">
+                    <span class="section__label">HOW WE THINK</span>
+                    <h2 class="focus__title">Our Focus</h2>
+                    <p class="focus__text">
+                        Take a moment to familiarize yourself with our mindset. These are the guiding principles and insights that provide a deeper understanding of our identity.
+                    </p>
                 </div>
-
-                <div class="process__card">
-                    <div class="process__number">02</div>
-                    <h3 class="process__title">Build</h3>
-                    <p class="process__description">Develop with clean architecture, regular updates, and transparent communication throughout.</p>
-                </div>
-
-                <div class="process__card">
-                    <div class="process__number">03</div>
-                    <h3 class="process__title">Test</h3>
-                    <p class="process__description">Thorough testing on both iOS and Android. Fix issues before you ever see them.</p>
-                </div>
-
-                <div class="process__card">
-                    <div class="process__number">04</div>
-                    <h3 class="process__title">Deliver</h3>
-                    <p class="process__description">Deploy to App Store & Play Store. Full handoff with documentation and ongoing support.</p>
+                <div class="focus__right">
+                    <div class="focus__grid">
+                        <div class="focus__item">
+                            <div class="focus__item-icon"><i class='bx bx-line-chart'></i></div>
+                            <h4 class="focus__item-title">We help our clients generate revenue</h4>
+                            <p class="focus__item-text">In our approach, we prioritize business needs and goals. We aim to deliver solutions that contribute to our clients' financial success.</p>
+                        </div>
+                        <div class="focus__item">
+                            <div class="focus__item-icon"><i class='bx bx-intersect'></i></div>
+                            <h4 class="focus__item-title">We are moving towards innovations</h4>
+                            <p class="focus__item-text">We stay at the forefront of design innovations and trends. Constantly integrating the latest practices to ensure our approach remains modern.</p>
+                        </div>
+                        <div class="focus__item">
+                            <div class="focus__item-icon"><i class='bx bx-user-check'></i></div>
+                            <h4 class="focus__item-title">We prioritize user experience</h4>
+                            <p class="focus__item-text">User experience is at the heart of everything we create. We design intuitive interfaces that delight users and keep them engaged.</p>
+                        </div>
+                        <div class="focus__item">
+                            <div class="focus__item-icon"><i class='bx bx-chip'></i></div>
+                            <h4 class="focus__item-title">We embrace cutting-edge technology</h4>
+                            <p class="focus__item-text">We leverage the latest technologies and frameworks to build scalable, efficient solutions that stand the test of time.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--=============== WORK ===============-->
-        <section class="work section" id="work">
-            <span class="section__subtitle">App Portfolio</span>
-            <h2 class="section__title">Recent Mobile Projects</h2>
-
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter='all'>All</span>
-                <span class=" work__item" data-filter='.ios'>iOS</span>
-                <span class=" work__item" data-filter='.android'>Android</span>
-            </div>
-
-            <div class="work__container container grid">
-
-                <!--===== Success360 (Live - App Store) =====-->
-                <div class="work__card mix ios android">
-                    <img src="assets/img/success360.png" alt="Success360 App" class="work__img">
-                    <h3 class="work__title">Success360</h3>
-                    <div class="work__details">
-                        <p class="work__detail-item"><strong>Problem:</strong> The client had a vision for an all-in-one personal development app but no existing solution combined fitness, wellness, business tools, and finance tracking in a single mobile experience.</p>
-                        <p class="work__detail-item"><strong>Solution:</strong> Built the entire app from scratch — AI-powered fitness coaching with diet plans, wellness journals with affirmations, a business accelerator with AI coaching and funding tools, paper trading with real-time stock prices, global news feed, and community networking with mentors.</p>
-                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, REST APIs, AI integrations</p>
-                        <p class="work__detail-item"><strong>Result:</strong> Live on App Store — 500+ users. 6 major feature modules shipped in a single stable release.</p>
-                        <p class="work__detail-item"><strong>Role:</strong> Solo developer — built the full app end-to-end including architecture, UI, API integrations, and store deployment.</p>
-                    </div>
-                    <a href="https://apps.apple.com/pk/app/success360/id6754213328" target="_blank" class="work__button">
-                        App Store <i class='bx bxl-apple work__icon'></i>
-                    </a>
+        <!--=============== IMPACT ===============-->
+        <section class="impact section" id="impact">
+            <div class="impact__container container">
+                <div class="impact__header">
+                    <h2 class="section__title section__title--light">Impact in Numbers</h2>
+                    <p class="impact__subtitle">Driving measurable outcomes through innovation and strategy.</p>
                 </div>
-
-                <!--===== Our Time Together (Live - App Store + Play Store) =====-->
-                <div class="work__card mix ios android">
-                    <img src="assets/img/ott.png" alt="Our Time Together App" class="work__img">
-                    <h3 class="work__title">Our Time Together</h3>
-                    <div class="work__details">
-                        <p class="work__detail-item"><strong>Problem:</strong> The client wanted a couples app that went beyond basic countdown timers — something emotionally engaging with themed experiences that couples would actually keep using.</p>
-                        <p class="work__detail-item"><strong>Solution:</strong> Built a relationship tracker with real-time counters (seconds to years), milestone badges (1 day, 100 days, anniversaries), 3 dynamic themes (Christmas, Halloween, Love) each with unique UI, animations, and sounds, shared photo timelines, and customizable widgets.</p>
-                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, Custom Animations, Mobile UI</p>
-                        <p class="work__detail-item"><strong>Result:</strong> Live on both App Store and Play Store — 50+ paid downloads (premium app, not free). Positive user feedback on the themed experiences.</p>
-                        <p class="work__detail-item"><strong>Role:</strong> Solo developer — handled everything from concept implementation to dual-platform store deployment.</p>
+                <div class="impact__grid">
+                    <div class="impact__card">
+                        <div class="impact__card-icon"><i class='bx bx-check-shield'></i></div>
+                        <h3 class="impact__card-number">20+</h3>
+                        <p class="impact__card-text">Successful projects delivered across web, mobile, and AI</p>
                     </div>
-                    <div class="work__links">
-                        <a href="https://apps.apple.com/us/app/our-time-together/id1633279048" target="_blank" class="work__button">
-                            App Store <i class='bx bxl-apple work__icon'></i>
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.MJA.ott" target="_blank" class="work__button">
-                            Play Store <i class='bx bxl-play-store work__icon'></i>
-                        </a>
+                    <div class="impact__card">
+                        <div class="impact__card-icon"><i class='bx bx-time-five'></i></div>
+                        <h3 class="impact__card-number">3+ Years</h3>
+                        <p class="impact__card-text">Proven experience turning ideas into high-quality products</p>
+                    </div>
+                    <div class="impact__card">
+                        <div class="impact__card-icon"><i class='bx bx-star'></i></div>
+                        <h3 class="impact__card-number">5-Star</h3>
+                        <p class="impact__card-text">Rated by clients across Upwork and Fiverr</p>
+                    </div>
+                    <div class="impact__card">
+                        <div class="impact__card-icon"><i class='bx bx-globe'></i></div>
+                        <h3 class="impact__card-number">10+</h3>
+                        <p class="impact__card-text">Businesses served worldwide with reliable digital solutions</p>
                     </div>
                 </div>
-
-                <!--===== Pure HD Audio (Live - Play Store) =====-->
-                <div class="work__card mix android">
-                    <img src="assets/img/pure_audio.png" alt="Pure HD Audio App" class="work__img">
-                    <h3 class="work__title">Pure HD Audio</h3>
-                    <div class="work__details">
-                        <p class="work__detail-item"><strong>Problem:</strong> The client wanted a premium equalizer app for audiophiles — existing options on the Play Store were either cluttered with ads or lacked real audio control.</p>
-                        <p class="work__detail-item"><strong>Solution:</strong> Built a professional 8-band equalizer (60Hz–12kHz) with +/-12dB real-time control, curated presets (Bass Up, Hi-Fi, Deep EQ, Vibe+, Stage), Spotify playlist integration for HD streaming, and wireless headphone optimization.</p>
-                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Android, Spotify API, Audio Processing, REST APIs</p>
-                        <p class="work__detail-item"><strong>Result:</strong> Live on Play Store — 1,000+ downloads. Professional-grade audio control in a clean, ad-free interface.</p>
-                        <p class="work__detail-item"><strong>Role:</strong> Solo developer — built the full audio processing pipeline and UI from scratch.</p>
-                    </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.silentsystem.pureaudiohd" target="_blank" class="work__button">
-                        Play Store <i class='bx bxl-play-store work__icon'></i>
-                    </a>
-                </div>
-
-                <!--===== Bhook Food Delivery (Team Project) =====-->
-                <div class="work__card mix ios android">
-                    <img src="assets/img/bhook.png" alt="Bhook Food Delivery App" class="work__img">
-                    <h3 class="work__title">Bhook</h3>
-                    <div class="work__details">
-                        <p class="work__detail-item"><strong>Problem:</strong> University software engineering project — build a production-quality food delivery app with real payment processing and live order tracking.</p>
-                        <p class="work__detail-item"><strong>Solution:</strong> Built the Flutter frontend and integrated the full ordering flow — restaurant browsing, cart management, card payment gateway, real-time delivery tracking, and a UI designed for speed and ease of use.</p>
-                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, Payment Gateway, REST APIs, Mobile UI</p>
-                        <p class="work__detail-item"><strong>Result:</strong> Fully functional end-to-end ordering flow with real payment processing on both platforms.</p>
-                        <p class="work__detail-item"><strong>Role:</strong> Flutter developer in a software engineering team — responsible for the mobile frontend and API integration.</p>
-                    </div>
-                </div>
-
-                <!--===== Matchmaking Events (Team Project) =====-->
-                <div class="work__card mix ios android">
-                    <img src="assets/img/matchmaking.png" alt="Matchmaking Events App" class="work__img">
-                    <h3 class="work__title">Matchmaking Events</h3>
-                    <div class="work__details">
-                        <p class="work__detail-item"><strong>Problem:</strong> University FYP — design and build a platform that facilitates real-world connections through curated in-person events instead of swipe-based dating.</p>
-                        <p class="work__detail-item"><strong>Solution:</strong> Built the mobile app with event registration, interest-based user matching, post-event engagement features, and a focus on safe, curated gatherings.</p>
-                        <p class="work__detail-item"><strong>Tech:</strong> Flutter, Dart, Firebase, REST APIs, Real-time Database, Mobile UI</p>
-                        <p class="work__detail-item"><strong>Result:</strong> Completed as final year project. Cross-platform app connecting users through real events.</p>
-                        <p class="work__detail-item"><strong>Role:</strong> Flutter developer in a software engineering team — responsible for the mobile app and real-time features.</p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
         <!--=============== TESTIMONIALS ===============-->
-        <section class="testimonial section">
-            <span class="section__subtitle">Client Feedback</span>
-            <h2 class="section__title">Testimonials</h2>
-
-            <div class="testimonial__container container swiper">
-                <div class="swiper-wrapper">
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/clients_pic/Mark.jpg" alt="Mark" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Mark</h3>
-                        <span class="testimonial__source">Founder, HiFun — United States | Upwork</span>
-                        <p class="testimonial__description">
-                            Appify Solutions consistently delivers excellent mobile app work. I highly recommend the team to anyone looking to bring their app ideas to life. We are very satisfied with the results and look forward to continuing our collaboration.
-                        </p>
+        <section class="testimonials section" id="testimonials">
+            <div class="testimonials__container container">
+                <div class="testimonials__header">
+                    <span class="section__label">SOCIAL PROOF</span>
+                    <h2 class="section__title">What Our Clients Say</h2>
+                </div>
+                <div class="testimonials__grid">
+                    <div class="testimonials__card">
+                        <div class="testimonials__stars">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p class="testimonials__text">"Craftlytics consistently delivers excellent mobile app work. I highly recommend the team to anyone looking to bring their app ideas to life. We are very satisfied with the results."</p>
+                        <div class="testimonials__author">
+                            <img src="assets/clients_pic/Mark.jpg" alt="Mark" class="testimonials__avatar">
+                            <div>
+                                <h4 class="testimonials__name">Mark</h4>
+                                <span class="testimonials__role">Founder, HiFun — United States</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/avatar.svg" alt="Georgi" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Georgi</h3>
-                        <span class="testimonial__source">Entrepreneur — Bulgaria | Upwork</span>
-                        <p class="testimonial__description">
-                            Appify Solutions did a great job with my project and adapted very well to new features and changing requirements. Looking forward to working together again in the near future!
-                        </p>
+                    <div class="testimonials__card">
+                        <div class="testimonials__stars">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p class="testimonials__text">"They took my vision and made it even better. Their deep understanding of Flutter made the process smooth and easy. Look forward to working with them again for sure."</p>
+                        <div class="testimonials__author">
+                            <img src="assets/img/avatar.svg" alt="Maheka R." class="testimonials__avatar">
+                            <div>
+                                <h4 class="testimonials__name">Maheka R.</h4>
+                                <span class="testimonials__role">Entrepreneur — Upwork</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/clients_pic/Alecia Lucas.jpg" alt="Alecia Lucas" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Alecia Lucas</h3>
-                        <span class="testimonial__source">Health Consultant — United States | Fiverr</span>
-                        <p class="testimonial__description">
-                            Very Professional & Responsive. Great at what he does and understanding idea concepts.
-                        </p>
+                    <div class="testimonials__card">
+                        <div class="testimonials__stars">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p class="testimonials__text">"Professional at work. He can easily implement ideas. He completes the project on time and does not delay. He always asks if you want to make any changes with an open heart."</p>
+                        <div class="testimonials__author">
+                            <img src="assets/clients_pic/hima.jpg" alt="Hima" class="testimonials__avatar">
+                            <div>
+                                <h4 class="testimonials__name">Hima</h4>
+                                <span class="testimonials__role">Project Manager — Egypt</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/avatar.svg" alt="Maheka Ruhitokui" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Maheka R.</h3>
-                        <span class="testimonial__source">Upwork</span>
-                        <p class="testimonial__description">
-                            They took my vision and made it even better. Their deep understanding of Flutter made the process smooth and easy. Look forward to working with them again for sure.
-                        </p>
-                    </div>
-
-                    <div class="testimonial__card swiper-slide">
-                        <img src="assets/clients_pic/hima.jpg" alt="Hima" class="testimonial__img">
-
-                        <h3 class="testimonial__name">Hima</h3>
-                        <span class="testimonial__source">Project Manager — Egypt | Fiverr</span>
-                        <p class="testimonial__description">
-                            Professional at work. He can easily implement ideas. He completes the project on time and does not delay. He always asks if you want to make any changes with an open heart. Excellent work spirit.
-                        </p>
+                    <div class="testimonials__card">
+                        <div class="testimonials__stars">
+                            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+                        </div>
+                        <p class="testimonials__text">"Great job with my project and adapted very well to new features and changing requirements. Looking forward to working together again in the near future!"</p>
+                        <div class="testimonials__author">
+                            <img src="assets/img/avatar.svg" alt="Georgi" class="testimonials__avatar">
+                            <div>
+                                <h4 class="testimonials__name">Georgi</h4>
+                                <span class="testimonials__role">Entrepreneur — Bulgaria</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+        </section>
 
+        <!--=============== PROCESS ===============-->
+        <section class="process section">
+            <div class="process__container container">
+                <div class="process__header">
+                    <span class="section__label section__label--light">HOW WE WORK</span>
+                    <h2 class="section__title section__title--light">Our Process</h2>
+                </div>
+                <div class="process__grid">
+                    <div class="process__card">
+                        <div class="process__number">01</div>
+                        <h3 class="process__title">Discovery</h3>
+                        <p class="process__text">We learn about your business, understand your goals, and define the project scope together.</p>
+                    </div>
+                    <div class="process__card">
+                        <div class="process__number">02</div>
+                        <h3 class="process__title">Design & Plan</h3>
+                        <p class="process__text">We architect the solution and create designs that align with your vision and user needs.</p>
+                    </div>
+                    <div class="process__card">
+                        <div class="process__number">03</div>
+                        <h3 class="process__title">Build & Iterate</h3>
+                        <p class="process__text">We develop with clean code, regular demos, and transparent communication throughout.</p>
+                    </div>
+                    <div class="process__card">
+                        <div class="process__number">04</div>
+                        <h3 class="process__title">Launch & Support</h3>
+                        <p class="process__text">We deploy your product and provide ongoing support to ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== BLOG ===============-->
+        <section class="blog section" id="blog">
+            <div class="blog__container container">
+                <div class="blog__header">
+                    <div>
+                        <span class="section__label">INSIGHTS</span>
+                        <h2 class="section__title">From Our Blog</h2>
+                    </div>
+                </div>
+                <div class="blog__grid">
+                    <article class="blog__card">
+                        <div class="blog__card-img">
+                            <div class="blog__card-placeholder"><i class='bx bx-bot'></i></div>
+                        </div>
+                        <div class="blog__card-body">
+                            <span class="blog__card-date">Coming Soon</span>
+                            <h3 class="blog__card-title">How AI Agents Are Replacing Manual Workflows in 2026</h3>
+                            <p class="blog__card-text">A deep dive into how startups are using AI agents to automate repetitive tasks and scale operations faster.</p>
+                        </div>
+                    </article>
+                    <article class="blog__card">
+                        <div class="blog__card-img">
+                            <div class="blog__card-placeholder"><i class='bx bx-mobile-alt'></i></div>
+                        </div>
+                        <div class="blog__card-body">
+                            <span class="blog__card-date">Coming Soon</span>
+                            <h3 class="blog__card-title">MVP vs Full Product: When to Ship Fast and When to Build Right</h3>
+                            <p class="blog__card-text">A founder's guide to deciding when a quick MVP is enough, and when you need a production-ready product from day one.</p>
+                        </div>
+                    </article>
+                    <article class="blog__card">
+                        <div class="blog__card-img">
+                            <div class="blog__card-placeholder"><i class='bx bx-phone-call'></i></div>
+                        </div>
+                        <div class="blog__card-body">
+                            <span class="blog__card-date">Coming Soon</span>
+                            <h3 class="blog__card-title">AI Calling Agents: The Future of Customer Support</h3>
+                            <p class="blog__card-text">How voice AI is transforming inbound and outbound calls — and why startups should pay attention now.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== FAQ ===============-->
+        <section class="faq section" id="faq">
+            <div class="faq__container container">
+                <div class="faq__header">
+                    <span class="section__label section__label--light">QUESTIONS</span>
+                    <h2 class="section__title section__title--light">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq__grid">
+                    <div class="faq__item" data-faq>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>How long does it take to build an MVP?</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Most MVPs take 4-8 weeks depending on complexity. We focus on shipping the core features that validate your idea, then iterate based on real user feedback.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-faq>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>What's your pricing model?</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>We work with fixed-price projects and monthly retainers. Every project starts with a free discovery call where we scope the work and provide a transparent quote — no hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-faq>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Do you work with early-stage startups?</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Absolutely — startups are our specialty. We understand tight budgets and fast timelines. We've helped founders go from napkin sketch to live product on the App Store.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-faq>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>What technologies do you use?</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Flutter for mobile, React/Next.js for web, Node.js/Python for backends, Firebase and AWS for cloud, and custom AI/LLM integrations. We pick the right tool for each project.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-faq>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Can you build AI agents for my business?</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Yes! We build custom AI agents that handle everything from customer support chatbots to voice calling agents, workflow automation, and internal tools powered by LLMs.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item" data-faq>
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Do you provide ongoing support after launch?</span>
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Yes. We offer post-launch support and maintenance plans. Bug fixes, feature updates, server monitoring — we're with you after the product ships.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--=============== CONTACT ===============-->
         <section class="contact section" id="contact">
-            <span class="section__subtitle">Get In Touch</span>
-            <h2 class="section__title">Contact Appify Solutions</h2>
-
-            <div class="contact__container container grid">
-                <div class="contact__content">
-                    <h3 class="contact__title">Business Contact</h3>
-
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class='bx bx-mail-send contact__card-icon'></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">abdullahqazi142@gmail.com</span>
-                            <a href="mailto:abdullahqazi142@gmail.com" class="contact__button">
-                                Send Email <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+            <div class="contact__container container">
+                <div class="contact__grid">
+                    <div class="contact__info-side">
+                        <span class="section__label">GET IN TOUCH</span>
+                        <h2 class="section__title">Got an idea?<br>Let's build it together.</h2>
+                        <p class="contact__text">
+                            Message us — we'd love to hear what you're working on.
+                        </p>
+                        <div class="contact__details">
+                            <a href="mailto:abdullahqazi142@gmail.com" class="contact__detail-item">
+                                <i class='bx bx-envelope'></i>
+                                <span>abdullahqazi142@gmail.com</span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/craftlytics/" target="_blank" class="contact__detail-item">
+                                <i class='bx bxl-linkedin'></i>
+                                <span>linkedin.com/company/craftlytics</span>
+                            </a>
+                        </div>
+                        <div class="contact__cta-buttons">
+                            <a href="mailto:abdullahqazi142@gmail.com?subject=Project%20Inquiry%20-%20Craftlytics" class="btn btn--primary">
+                                <i class='bx bx-envelope'></i> Send us an Email
+                            </a>
+                            <a href="https://calendly.com/qazifazil59/30min" target="_blank" class="btn btn--outline-dark">
+                                <i class='bx bx-calendar'></i> Book a Free Call
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <div class="contact__content">
-                    <h3 class="contact__title">Business Profile</h3>
-
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class='bx bx-buildings contact__card-icon'></i>
-                            <h3 class="contact__card-title">Business Name</h3>
-                            <span class="contact__card-data">Appify Solutions</span>
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bx-mobile-alt contact__card-icon'></i>
-                            <h3 class="contact__card-title">Category</h3>
-                            <span class="contact__card-data">Mobile Application Development Services</span>
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bx-user-check contact__card-icon'></i>
-                            <h3 class="contact__card-title">Owner</h3>
-                            <span class="contact__card-data">Muhammad Abdullah</span>
-                        </div>
+                    <div class="contact__form-side">
+                        <form class="contact__form" id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                            <h3 class="contact__form-title">Send us a message</h3>
+                            <div class="contact__form-group">
+                                <input type="text" name="name" placeholder="Your Name" required class="contact__input">
+                            </div>
+                            <div class="contact__form-group">
+                                <input type="email" name="email" placeholder="Your Email" required class="contact__input">
+                            </div>
+                            <div class="contact__form-group">
+                                <select name="service" class="contact__input contact__select">
+                                    <option value="" disabled selected>What do you need?</option>
+                                    <option value="mobile-app">Mobile App Development</option>
+                                    <option value="web">Website / Web App</option>
+                                    <option value="ai-agent">AI Agent</option>
+                                    <option value="ai-calling">AI Calling Agent</option>
+                                    <option value="mvp">MVP Development</option>
+                                    <option value="strategy">Digital Product Strategy</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="contact__form-group">
+                                <select name="budget" class="contact__input contact__select">
+                                    <option value="" disabled selected>Budget Range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-50k">$15,000 - $50,000</option>
+                                    <option value="50k+">$50,000+</option>
+                                    <option value="not-sure">Not sure yet</option>
+                                </select>
+                            </div>
+                            <div class="contact__form-group">
+                                <textarea name="message" placeholder="Tell us about your project..." rows="4" required class="contact__input contact__textarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">
+                                Send Message <i class='bx bx-send'></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer">
         <div class="footer__container container">
-            <h1 class="footer__title">Appify Solutions</h1>
-
-            <ul class="footer__list">
-
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Home</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#about" class="footer__link">About</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#skills" class="footer__link">Skills</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#services" class="footer__link">Services</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#work" class="footer__link">Work</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#contact" class="footer__link">Contact</a>
-                </li>
-            </ul>
-
-            <a href="mailto:abdullahqazi142@gmail.com" class="footer__email">abdullahqazi142@gmail.com</a>
-
-
-            <span class="footer__copy">
-                &#169; 2026 Appify Solutions. All rights reserved.
-            </span>
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/img/craftlytics-logo.png" alt="Craftlytics" class="footer__logo">
+                    <p class="footer__tagline">Innovation, Crafted.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">AI Agents</a></li>
+                        <li><a href="#services">MVP Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Connect</h4>
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/company/craftlytics/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="mailto:abdullahqazi142@gmail.com" class="footer__email">abdullahqazi142@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Craftlytics. All rights reserved.</span>
+            </div>
         </div>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
-
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
-
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script>
+        // Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('loader--hidden');
+            }, 800);
+        });
+
+        // Mobile nav toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+        const navMenu = document.getElementById('nav-menu');
+        const navBackdrop = document.getElementById('nav-backdrop');
+
+        function openMenu() {
+            navMenu.classList.add('show-menu');
+            navBackdrop.classList.add('show-backdrop');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
+            navMenu.classList.remove('show-menu');
+            navBackdrop.classList.remove('show-backdrop');
+            document.body.style.overflow = '';
+        }
+
+        if (navToggle) navToggle.addEventListener('click', openMenu);
+        if (navClose) navClose.addEventListener('click', closeMenu);
+        if (navBackdrop) navBackdrop.addEventListener('click', closeMenu);
+
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY >= 50) {
+                header.classList.add('scroll-header');
+            } else {
+                header.classList.remove('scroll-header');
+            }
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                const link = document.querySelector('.nav__link[href*=' + sectionId + ']');
+                if (link) {
+                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                        link.classList.add('active-link');
+                    } else {
+                        link.classList.remove('active-link');
+                    }
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.services__card, .focus__item, .impact__card, .process__card, .about__why-item, .hero__card, .portfolio__card, .testimonials__card, .blog__card, .techstack__item').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Counter animation
+        function animateCounter(el) {
+            const text = el.textContent;
+            const match = text.match(/(\d+)/);
+            if (!match) return;
+            const target = parseInt(match[0]);
+            const prefix = text.substring(0, text.indexOf(match[0]));
+            const suffix = text.substring(text.indexOf(match[0]) + match[0].length);
+            let current = 0;
+            const increment = Math.ceil(target / 40);
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = prefix + current + suffix;
+            }, 30);
+        }
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.impact__card-number').forEach(el => {
+            counterObserver.observe(el);
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('[data-faq]').forEach(item => {
+            const btn = item.querySelector('.faq__question');
+            btn.addEventListener('click', () => {
+                const isOpen = item.classList.contains('faq--open');
+                // Close all
+                document.querySelectorAll('[data-faq]').forEach(i => i.classList.remove('faq--open'));
+                document.querySelectorAll('.faq__question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+                // Open clicked (if was closed)
+                if (!isOpen) {
+                    item.classList.add('faq--open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Contact form submit
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const data = new FormData(this);
+            const subject = encodeURIComponent('Project Inquiry - ' + (data.get('service') || 'General'));
+            const body = encodeURIComponent(
+                'Name: ' + data.get('name') + '\n' +
+                'Email: ' + data.get('email') + '\n' +
+                'Service: ' + data.get('service') + '\n' +
+                'Budget: ' + data.get('budget') + '\n\n' +
+                'Message:\n' + data.get('message')
+            );
+            window.location.href = 'mailto:abdullahqazi142@gmail.com?subject=' + subject + '&body=' + body;
+        });
+
+        // Timelapse animated background
+        (function() {
+            const canvas = document.getElementById('hero-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            const buildings = [];
+            function generateBuildings() {
+                buildings.length = 0;
+                const w = canvas.width;
+                const h = canvas.height;
+                const baseY = h * 0.55;
+                let x = 0;
+                while (x < w + 60) {
+                    const bw = 30 + Math.random() * 60;
+                    const bh = 80 + Math.random() * (h * 0.35);
+                    buildings.push({
+                        x: x, w: bw, h: bh,
+                        y: baseY + (h - baseY) - bh + Math.random() * 40,
+                        windows: Math.floor(bh / 20),
+                        windowCols: Math.floor(bw / 14),
+                        lit: Array.from({length: Math.floor(bh / 20) * Math.floor(bw / 14)}, () => Math.random() > 0.4)
+                    });
+                    x += bw + 2 + Math.random() * 8;
+                }
+            }
+            generateBuildings();
+            window.addEventListener('resize', generateBuildings);
+
+            const movers = [];
+            for (let i = 0; i < 12; i++) {
+                movers.push({
+                    x: Math.random() * canvas.width,
+                    y: canvas.height * (0.7 + Math.random() * 0.2),
+                    speed: 0.3 + Math.random() * 1.2,
+                    size: 2 + Math.random() * 3,
+                    color: ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff9a3c', '#e84393'][Math.floor(Math.random() * 6)],
+                    dir: Math.random() > 0.5 ? 1 : -1,
+                    trail: []
+                });
+            }
+
+            const stars = [];
+            for (let i = 0; i < 80; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height * 0.45,
+                    size: 0.5 + Math.random() * 1.5,
+                    twinkle: Math.random() * Math.PI * 2,
+                    speed: 0.01 + Math.random() * 0.03
+                });
+            }
+
+            const clouds = [];
+            for (let i = 0; i < 5; i++) {
+                clouds.push({
+                    x: Math.random() * canvas.width,
+                    y: 50 + Math.random() * canvas.height * 0.25,
+                    w: 100 + Math.random() * 200,
+                    h: 20 + Math.random() * 30,
+                    speed: 0.1 + Math.random() * 0.3,
+                    opacity: 0.03 + Math.random() * 0.06
+                });
+            }
+
+            function drawSky() {
+                const grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+                grad.addColorStop(0, '#0a1628');
+                grad.addColorStop(0.4, '#0f1f3a');
+                grad.addColorStop(0.6, '#152a4a');
+                grad.addColorStop(1, '#1a3355');
+                ctx.fillStyle = grad;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            }
+
+            function drawStars(time) {
+                stars.forEach(s => {
+                    const alpha = 0.4 + 0.6 * Math.abs(Math.sin(s.twinkle + time * s.speed));
+                    ctx.beginPath();
+                    ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                    ctx.fill();
+                });
+            }
+
+            function drawClouds() {
+                clouds.forEach(c => {
+                    c.x += c.speed;
+                    if (c.x > canvas.width + c.w) c.x = -c.w;
+                    ctx.beginPath();
+                    ctx.ellipse(c.x, c.y, c.w / 2, c.h / 2, 0, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(255, 255, 255, ${c.opacity})`;
+                    ctx.fill();
+                });
+            }
+
+            function drawBuildings(time) {
+                const h = canvas.height;
+                buildings.forEach(b => {
+                    ctx.fillStyle = '#0d1520';
+                    ctx.fillRect(b.x, b.y, b.w, h - b.y);
+                    ctx.fillStyle = 'rgba(255,255,255,0.03)';
+                    ctx.fillRect(b.x, b.y, 2, h - b.y);
+                    for (let row = 0; row < b.windows; row++) {
+                        for (let col = 0; col < b.windowCols; col++) {
+                            const idx = row * b.windowCols + col;
+                            if (Math.random() < 0.001) b.lit[idx] = !b.lit[idx];
+                            if (b.lit[idx]) {
+                                const wx = b.x + 6 + col * 14;
+                                const wy = b.y + 8 + row * 20;
+                                const flicker = 0.5 + 0.5 * Math.sin(time * 0.002 + idx);
+                                ctx.fillStyle = `rgba(255, 220, 130, ${0.3 + flicker * 0.5})`;
+                                ctx.fillRect(wx, wy, 6, 8);
+                            }
+                        }
+                    }
+                });
+            }
+
+            function drawWater(time) {
+                const waterY = canvas.height * 0.78;
+                const waterH = canvas.height - waterY;
+                const wGrad = ctx.createLinearGradient(0, waterY, 0, canvas.height);
+                wGrad.addColorStop(0, 'rgba(15, 40, 80, 0.6)');
+                wGrad.addColorStop(1, 'rgba(10, 20, 40, 0.8)');
+                ctx.fillStyle = wGrad;
+                ctx.fillRect(0, waterY, canvas.width, waterH);
+                for (let i = 0; i < 30; i++) {
+                    const ry = waterY + 5 + i * (waterH / 30);
+                    const rw = 40 + Math.random() * 100;
+                    const rx = (Math.sin(time * 0.001 + i * 0.5) + 1) * 0.5 * (canvas.width - rw);
+                    const alpha = 0.03 + 0.05 * Math.sin(time * 0.003 + i);
+                    ctx.fillStyle = `rgba(200, 180, 255, ${alpha})`;
+                    ctx.fillRect(rx, ry, rw, 1.5);
+                }
+            }
+
+            function drawMovers(time) {
+                movers.forEach(m => {
+                    m.x += m.speed * m.dir;
+                    if (m.x > canvas.width + 20) m.x = -20;
+                    if (m.x < -20) m.x = canvas.width + 20;
+                    m.trail.push({x: m.x, y: m.y});
+                    if (m.trail.length > 20) m.trail.shift();
+                    m.trail.forEach((t, i) => {
+                        const alpha = (i / m.trail.length) * 0.4;
+                        ctx.beginPath();
+                        ctx.arc(t.x, t.y, m.size * (i / m.trail.length), 0, Math.PI * 2);
+                        ctx.globalAlpha = alpha;
+                        ctx.fillStyle = m.color;
+                        ctx.fill();
+                        ctx.globalAlpha = 1;
+                    });
+                    ctx.beginPath();
+                    ctx.arc(m.x, m.y, m.size, 0, Math.PI * 2);
+                    ctx.fillStyle = m.color;
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(m.x, m.y, m.size * 3, 0, Math.PI * 2);
+                    const glow = ctx.createRadialGradient(m.x, m.y, 0, m.x, m.y, m.size * 3);
+                    glow.addColorStop(0, m.color + '40');
+                    glow.addColorStop(1, 'transparent');
+                    ctx.fillStyle = glow;
+                    ctx.fill();
+                });
+            }
+
+            let animTime = 0;
+            function animate() {
+                animTime++;
+                drawSky();
+                drawStars(animTime);
+                drawClouds();
+                drawBuildings(animTime);
+                drawWater(animTime);
+                drawMovers(animTime);
+                requestAnimationFrame(animate);
+            }
+            animate();
+        })();
+    </script>
 </body>
 
 </html>

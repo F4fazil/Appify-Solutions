@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /Users/fazilqazi/Downloads/exports/craftlytics-chisel-300-dark.png /Users/fazilqazi/Desktop/Appify-Solutions/assets/img/craftlytics-logo.png)",
+      "Bash(cp /Users/fazilqazi/Downloads/exports/craftlytics-chisel-300-light.png /Users/fazilqazi/Desktop/Appify-Solutions/assets/img/craftlytics-logo-light.png)",
+      "Bash(cp /Users/fazilqazi/Downloads/exports/craftlytics-chisel-300-transparent.png /Users/fazilqazi/Desktop/Appify-Solutions/assets/img/craftlytics-logo-transparent.png)",
+      "Bash(open:*)"
+    ]
+  }
+}
